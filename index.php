@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Conditionals and Loops in PHP</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,9 +22,71 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+
+        <h1>PHP Conditionals</h1>
+
         <?php 
-        /* Write your PHP here */
+
+
+
+        /* Conditonals in PHP are written ans funcriion very similar to conditionals in JS. */
+
+        $num = 45;
+        if ($num === 45) {
+            echo '<br>The number is 45!';
+        }else {
+            echo '<br>The number is NOT 45!';
+        }
+
+        /* If else if conditionals work in much the same way as well. */
+
+        $score = 87;
+        if ($score >= 90)   {
+            echo '<br>You got an A.';
+        }else if ($score >= 80) {
+            echo '<br>You got an B.';
+        }else if ($score >= 70){
+            echo '<br>You got an C.';
+        }else if ($score >= 60) {
+            echo '<br>You got an D.';
+        }else {
+            echo '<br> You failed the test.';
+        }
+
+        echo '<h1>PHP Loops</h1>';
+
+        /* PHP loops look like JS loops. They come in much the same variety as well. For example you have the standard For Loop. */
+        for ($i = 0; $i <= 10; $i++)    {
+            echo '<br>Your number is ' . $i .' good work.';
+        }
+
+        /* The one major difference in PHP vs JS is how you iterate through an array. In php you can loop or iterate through an array using the foreach loop. This style of loop was built specifically to deal with php arrays. */
+        $myCrayons = array('red', 'green','blue', 'orange', 'purple', 'brown', 'yellow', 'white', 'black', 'pink' );
         
+foreach ($myCrayons as $i) {
+    echo '<br>You have a '. $i . ' color crayon in the box.';
+}
+
+/* The php while loop */
+$myWhile = 10;
+
+while ($myWhile > 0)    {
+    echo '<br>You still have more than 0. You have ' . $myWhile;
+    $myWhile--;
+}
+
+/* The PHP Do While Loops */
+
+$myDo = 0;
+do {
+    echo '<br>Let\'s add something until we have 10 because you have ' . $myDo;
+    $myDo++;
+} while ($myDo < 10);
+
+
+
+
+
         ?> 
 
            
