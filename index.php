@@ -29,7 +29,7 @@
 
 
 
-        /* Conditonals in PHP are written ans funcriion very similar to conditionals in JS. */
+        /* Conditonals in PHP are written and function very similar to conditionals in JS. */
 
         $num = 45;
         if ($num === 45) {
@@ -38,7 +38,7 @@
             echo '<br>The number is NOT 45!';
         }
 
-        /* If else if conditionals work in much the same way as well. */
+        /* If, else if conditionals work in much the same way as well. */
 
         $score = 87;
         if ($score >= 90)   {
@@ -55,19 +55,19 @@
 
         echo '<h1>PHP Loops</h1>';
 
-        /* PHP loops look like JS loops. They come in much the same variety as well. For example you have the standard For Loop. */
+        /* PHP loops look like JS loops. They come in much the same variety as well. For example, you have the standard For Loop. */
         for ($i = 0; $i <= 10; $i++)    {
             echo '<br>Your number is ' . $i .' good work.';
         }
 
-        /* The one major difference in PHP vs JS is how you iterate through an array. In php you can loop or iterate through an array using the foreach loop. This style of loop was built specifically to deal with php arrays. */
+        /* The one major difference in PHP vs JS is how you iterate through an array. In PHP, you can loop or iterate through an array using the foreach loop. This style of loop was built specifically to deal with PHP arrays. */
         $myCrayons = array('red', 'green','blue', 'orange', 'purple', 'brown', 'yellow', 'white', 'black', 'pink' );
         
 foreach ($myCrayons as $i) {
     echo '<br>You have a '. $i . ' color crayon in the box.';
 }
 
-/* The php while loop */
+/* The PHP while loop */
 $myWhile = 10;
 
 while ($myWhile > 0)    {
